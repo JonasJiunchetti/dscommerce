@@ -1,43 +1,32 @@
 package com.projectcommerce.dscommerce.Entities;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "tb_user")
+@Table(name = "tb_category")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class User {
-  
+public class Category {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
+
+    @ManyToMany(mappedBy = "categories")
+    private Set<Product> products = new HashSet<>();
     
-    @Column(unique = true)
-    private String email;
-
-    private String phone;
-
-    private LocalDate birthDate;
-
-    private String password;
-
-    @OneToMany(mappedBy = "client")
-    private List<Order> orders = new ArrayList<>(); 
-    
-    }
+}

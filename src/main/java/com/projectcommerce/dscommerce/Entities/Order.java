@@ -2,6 +2,7 @@ package com.projectcommerce.dscommerce.Entities;
 
 import java.time.Instant;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import jakarta.persistence.CascadeType;
@@ -44,4 +45,10 @@ public class Order {
 
     @OneToMany(mappedBy = "id.order")
     private Set<OrderItem> items = new HashSet<>();
+
+    public List<Product> getProducts()  {
+        return items.stream().map(x -> x.getProduct()).toList();
+    }
+
 }
+

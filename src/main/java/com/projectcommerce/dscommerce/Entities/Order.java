@@ -48,7 +48,7 @@ public class Order {
 
     public List<Product> getProducts()  {
         return items.stream().map(x -> x.getProduct()).toList();
-    }
+    }    
 
 }
 

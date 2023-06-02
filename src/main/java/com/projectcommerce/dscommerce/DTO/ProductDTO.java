@@ -23,7 +23,7 @@ public class ProductDTO {
     private String imgUrl;
 
     public ProductDTO(Product entity){
-        
+    
         id = entity.getId();
         name = entity.getName();
         description = entity.getDescription();

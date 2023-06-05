@@ -1,6 +1,6 @@
 package com.projectcommerce.dscommerce.DTO;
 
-import com.projectcommerce.dscommerce.Entities.Product;
+import com.projectcommerce.dscommerce.entities.Product;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

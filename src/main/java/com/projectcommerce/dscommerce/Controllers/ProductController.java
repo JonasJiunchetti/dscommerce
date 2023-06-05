@@ -1,4 +1,4 @@
-package com.projectcommerce.dscommerce.Controllers;
+package com.projectcommerce.dscommerce.controllers;
 
 import java.net.URI;
 
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.projectcommerce.dscommerce.DTO.ProductDTO;
-import com.projectcommerce.dscommerce.Services.ProductService;
+import com.projectcommerce.dscommerce.services.ProductService;
 
 @RestController
 @RequestMapping(value = "/products")

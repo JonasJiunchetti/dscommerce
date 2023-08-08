@@ -1,6 +1,7 @@
 package com.projectcommerce.dscommerce.entities;
 
 import java.time.Instant;
+import java.util.Objects;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -31,4 +32,17 @@ public class Payment {
     @OneToOne
     @MapsId
     private Order order;
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id); 
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Payment payment = (Payment) obj;
+        return Objects.equals(id, payment.id);
+    }
 }

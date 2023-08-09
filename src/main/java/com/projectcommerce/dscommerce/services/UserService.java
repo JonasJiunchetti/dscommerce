@@ -12,11 +12,11 @@ import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.projectcommerce.dscommerce.DTO.UserDTO;
+import com.projectcommerce.dscommerce.dto.UserDTO;
+import com.projectcommerce.dscommerce.projections.UserDetailsProjection;
 import com.projectcommerce.dscommerce.entities.Role;
 import com.projectcommerce.dscommerce.entities.User;
-import com.projectcommerce.dscommerce.projections.UserDetailsProjection;
-import com.projectcommerce.dscommerce.repositories.UserRepository;
+import com.projectcommerce.dscommerce.xrepositories.UserRepository;
 
 @Service
 public class UserService implements UserDetailsService {

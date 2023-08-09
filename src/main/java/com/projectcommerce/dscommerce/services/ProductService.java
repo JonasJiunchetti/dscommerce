@@ -8,18 +8,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.projectcommerce.dscommerce.DTO.CategoryDTO;
-import com.projectcommerce.dscommerce.DTO.ProductDTO;
-import com.projectcommerce.dscommerce.DTO.ProductMinDTO;
-import com.projectcommerce.dscommerce.entities.Category;
-import com.projectcommerce.dscommerce.entities.Product;
-import com.projectcommerce.dscommerce.repositories.ProductRepository;
+import com.projectcommerce.dscommerce.dto.CategoryDTO;
+import com.projectcommerce.dscommerce.dto.ProductDTO;
+import com.projectcommerce.dscommerce.dto.ProductMinDTO;
 import com.projectcommerce.dscommerce.services.exceptions.DatabaseException;
 import com.projectcommerce.dscommerce.services.exceptions.ResourceNotFoundException;
+import com.projectcommerce.dscommerce.entities.Category;
+import com.projectcommerce.dscommerce.entities.Product;
+import com.projectcommerce.dscommerce.xrepositories.ProductRepository;
 
 import jakarta.persistence.EntityNotFoundException;
-
-
 
 @Service
 public class ProductService {

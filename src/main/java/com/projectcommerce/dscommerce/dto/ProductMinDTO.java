@@ -1,4 +1,4 @@
-package com.projectcommerce.dscommerce.DTO;
+package com.projectcommerce.dscommerce.dto;
 
 import com.projectcommerce.dscommerce.entities.Product;
 

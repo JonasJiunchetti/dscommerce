@@ -9,8 +9,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.projectcommerce.dscommerce.DTO.CustomError;
-import com.projectcommerce.dscommerce.DTO.ValidationError;
+import com.projectcommerce.dscommerce.dto.CustomError;
+import com.projectcommerce.dscommerce.dto.ValidationError;
 import com.projectcommerce.dscommerce.services.exceptions.DatabaseException;
 import com.projectcommerce.dscommerce.services.exceptions.ResourceNotFoundException;
 

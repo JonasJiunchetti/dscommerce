@@ -16,7 +16,7 @@ import com.projectcommerce.dscommerce.dto.UserDTO;
 import com.projectcommerce.dscommerce.projections.UserDetailsProjection;
 import com.projectcommerce.dscommerce.entities.Role;
 import com.projectcommerce.dscommerce.entities.User;
-import com.projectcommerce.dscommerce.xrepositories.UserRepository;
+import com.projectcommerce.dscommerce.repositories.UserRepository;
 
 @Service
 public class UserService implements UserDetailsService {

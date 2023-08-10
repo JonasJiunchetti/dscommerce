@@ -15,7 +15,7 @@ import com.projectcommerce.dscommerce.services.exceptions.DatabaseException;
 import com.projectcommerce.dscommerce.services.exceptions.ResourceNotFoundException;
 import com.projectcommerce.dscommerce.entities.Category;
 import com.projectcommerce.dscommerce.entities.Product;
-import com.projectcommerce.dscommerce.xrepositories.ProductRepository;
+import com.projectcommerce.dscommerce.repositories.ProductRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 
